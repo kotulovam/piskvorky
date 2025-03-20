@@ -46,7 +46,8 @@ p {
   flex-direction: column;
 }
 
-.game__buttons-rules {
+.game__buttons-rules,
+.game__buttons-rules:link {
   display: flex;
   justify-content: center;
   padding: 10px 0;
@@ -54,12 +55,22 @@ p {
   background-color: #1fcca4;
 }
 
-.game__buttons-begin {
+.game__buttons-rules:hover {
+  background-color: #1cbb96;
+}
+
+.game__buttons-begin,
+.game__buttons-begin:link {
   display: flex;
   justify-content: center;
   padding: 10px 0;
   background-color: #0197f6;
 }
+
+.game__buttons-begin:hover {
+  background-color: #0090e9;
+}
+
 
 a {
   text-decoration: none;
