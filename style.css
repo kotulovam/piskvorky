@@ -1,0 +1,67 @@
+html,
+body {
+  height: 100%;
+  background: linear-gradient(#615dad, #ffc8da);
+  color: #ffffff;
+}
+
+.lobster-regular {
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1 {
+  font-family: Lobster;
+}
+
+h1,
+p {
+  text-align: center;
+}
+
+.game {
+  padding: 10% 25%;
+  border-spacing: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.game__picture {
+  border-radius: 10px 10px 0 0;
+}
+
+.game__body {
+  background-color: #283e50;
+  font-family: sans-serif;
+}
+
+.game__description {
+  padding: 0 15px;
+}
+
+.game__buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.game__buttons-rules {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #283e50;
+  background-color: #1fcca4;
+}
+
+.game__buttons-begin {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  background-color: #0197f6;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
