@@ -22,7 +22,7 @@ p {
 }
 
 .game {
-  width: 45%;
+  width: 70%;
   display: flex;
   flex-direction: column;
 }
@@ -75,4 +75,28 @@ p {
 a {
   text-decoration: none;
   color: #ffffff;
+}
+
+@media (min-width: 450px) {
+  .game {
+    width: 60%;
+  }
+}
+
+@media (min-width: 500px) {
+  .game {
+    width: 50%;
+  }
+}
+
+@media (min-width: 769px) {
+  .game {
+    width: 45%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .game {
+    width: 35%;
+  }
 }
