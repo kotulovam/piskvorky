@@ -14,17 +14,19 @@ body {
 h1 {
   font-family: "Lobster", sans-serif;
   font-weight: normal;
-}
-
-h1,
-p {
+  font-size: 50px;
   text-align: center;
 }
 
+p {
+  text-align: center;
+  line-height: 1.5;
+}
+
 .game {
-  width: 70%;
   display: flex;
   flex-direction: column;
+  max-width: 375px;
 }
 
 .game__picture {
@@ -54,6 +56,7 @@ p {
   padding: 10px 0;
   border-bottom: 1px solid #283e50;
   background-color: #1fcca4;
+  padding: 20px 0;
 }
 
 .game__buttons-rules:hover {
@@ -66,6 +69,7 @@ p {
   justify-content: center;
   padding: 10px 0;
   background-color: #0197f6;
+  padding: 20px 0;
 }
 
 .game__buttons-begin:hover {
@@ -77,26 +81,8 @@ a {
   color: #ffffff;
 }
 
-@media (min-width: 450px) {
+@media (max-width: 450px) {
   .game {
-    width: 60%;
-  }
-}
-
-@media (min-width: 500px) {
-  .game {
-    width: 50%;
-  }
-}
-
-@media (min-width: 769px) {
-  .game {
-    width: 45%;
-  }
-}
-
-@media (min-width: 1024px) {
-  .game {
-    width: 35%;
+    width: 85%;
   }
 }
