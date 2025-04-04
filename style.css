@@ -29,6 +29,11 @@ p {
   max-width: 375px;
 }
 
+.game2 {
+  max-width: 80vmin;
+  margin: 0 0 10vmin 0;
+}
+
 .game__picture {
   border-radius: 10px 10px 0 0;
   max-width: 100%;
@@ -80,6 +85,48 @@ a {
   text-decoration: none;
   color: #ffffff;
 }
+
+.game__field {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.game__field--square {
+  width: 8vmin;
+  height: 8vmin;
+}
+
+.game__options {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -4vmin;
+}
+
+.game__options--state {
+  display: flex;
+}
+
+.game__options--buttons {
+  display: flex;
+  flex-shrink: 1;
+  justify-content: flex-start;
+}
+
+.game__options--buttons--home {
+  background-color: #1fcca4;
+  padding: 5px;
+  border-radius: 3px;
+  margin-right: 5px;
+
+}
+
+.game__options--buttons--restart {
+  background-color: #0197f6;
+  padding: 5px;
+  border-radius: 3px;
+}
+
 
 @media (max-width: 450px) {
   .game {
