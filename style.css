@@ -31,7 +31,7 @@ p {
 
 .game2 {
   max-width: 80vmin;
-  margin: -2vmin 0 2vmin 0;
+  margin: -5vmin 0 2vmin 0;
   box-sizing: border-box;
 }
 
@@ -93,7 +93,6 @@ a {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-bottom: 2vmin;
   width: 100%;
   padding: 0;
   border: solid 1px black;
@@ -115,7 +114,7 @@ button.game__field--square:hover {
 .game__options {
   display: flex;
   justify-content: space-between;
-  margin-top: -4vmin;
+  margin-top: -7vmin;
 }
 
 .game__options--state {
@@ -136,7 +135,7 @@ button.game__field--square:hover {
 .game__options--buttons {
   display: flex;
   justify-content: flex-start;
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 .game__options--buttons--home {
