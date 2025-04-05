@@ -65,7 +65,8 @@ p {
   padding: 20px 0;
 }
 
-.game__buttons-rules:hover {
+.game__buttons-rules:hover,
+.game__options--buttons--home:hover {
   background-color: #1cbb96;
 }
 
@@ -78,7 +79,8 @@ p {
   padding: 20px 0;
 }
 
-.game__buttons-begin:hover {
+.game__buttons-begin:hover,
+.game__options--buttons--restart:hover {
   background-color: #0090e9;
 }
 
@@ -146,7 +148,7 @@ button.game__field--square:hover {
 
 .game__options--buttons--restart {
   background-color: #0197f6;
-  padding: 5px 6px;
+  padding: 5px 5px;
   border-radius: 3px;
 }
 
