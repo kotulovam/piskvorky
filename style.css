@@ -14,7 +14,7 @@ body {
 h1 {
   font-family: "Lobster", sans-serif;
   font-weight: normal;
-  font-size: 50px;
+  font-size: 55px;
   text-align: center;
 }
 
@@ -31,7 +31,8 @@ p {
 
 .game2 {
   max-width: 80vmin;
-  margin: 0 0 10vmin 0;
+  margin: -2vmin 0 2vmin 0;
+  box-sizing: border-box;
 }
 
 .game__picture {
@@ -90,11 +91,23 @@ a {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  margin-bottom: 2vmin;
+  width: 100%;
+  padding: 0;
+  border: solid 1px black;
 }
 
 .game__field--square {
   width: 8vmin;
   height: 8vmin;
+  border: 1px solid black;
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+}
+
+button.game__field--square:hover {
+  background: rgba(255, 255, 255, 0.5);
 }
 
 .game__options {
@@ -107,10 +120,21 @@ a {
   display: flex;
 }
 
+.game__options--state img {
+  margin-bottom: 5px;
+}
+
+.game__options--state p {
+  margin-right: 5px;
+  font-size: larger;
+  font-weight: bolder;
+  font-family: sans-serif;
+}
+
 .game__options--buttons {
   display: flex;
-  flex-shrink: 1;
   justify-content: flex-start;
+  margin-top: 10px;
 }
 
 .game__options--buttons--home {
@@ -118,12 +142,11 @@ a {
   padding: 5px;
   border-radius: 3px;
   margin-right: 5px;
-
 }
 
 .game__options--buttons--restart {
   background-color: #0197f6;
-  padding: 5px;
+  padding: 5px 6px;
   border-radius: 3px;
 }
 
