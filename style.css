@@ -95,20 +95,22 @@ a {
   flex-wrap: wrap;
   width: 100%;
   padding: 0;
-  border: solid 1px black;
+  border: solid 1px #283e50;
 }
+
 
 .game__field--square {
   width: 8vmin;
   height: 8vmin;
-  border: 1px solid black;
+  border: 1px solid #283e50;
   box-sizing: border-box;
   background: rgba(255, 255, 255, 0.4);
   cursor: pointer;
 }
 
-button.game__field--square:hover {
-  background: rgba(255, 255, 255, 0.5);
+.game__field--square:hover,
+.game__field--square:focus {
+  background: rgba(255, 255, 255, 0.3);
 }
 
 .game__options {
@@ -147,13 +149,21 @@ button.game__field--square:hover {
 
 .game__options--buttons--restart {
   background-color: #0197f6;
-  padding: 5px 5px;
+  padding: 5px;
   border-radius: 3px;
 }
-
 
 @media (max-width: 450px) {
   .game {
     width: 85%;
+  }
+
+  .game2 h1 {
+    font-size: 70px;
+  }
+
+  .game__field,
+  .game__field--square {
+    border: solid 1px black;
   }
 }
