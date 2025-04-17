@@ -108,6 +108,14 @@ a {
   cursor: pointer;
 }
 
+.game__field--square-cross img {
+  width: 4.5vmin
+}
+
+.game__field--square-circle img {
+  width: 4.5vmin
+}
+
 .game__field--square:hover,
 .game__field--square:focus {
   background: rgba(255, 255, 255, 0.3);
