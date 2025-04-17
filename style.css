@@ -131,8 +131,10 @@ a {
   display: flex;
 }
 
-.game__options--state img {
-  margin-bottom: 5px;
+.game__options--state div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .game__options--state p {
