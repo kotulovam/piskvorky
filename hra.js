@@ -1,9 +1,7 @@
 let currentPlayer = 'circle';
 let gameButtons = document.querySelectorAll('.game__field--square');
 
-const currentPlayerElement = document.querySelector(
-  '.game__options--state div',
-);
+const restartButton = document.querySelector;
 
 const chosenButton = (event) => {
   const currentButton = event.target;
@@ -18,15 +16,25 @@ const chosenButton = (event) => {
     currentPlayer = 'circle';
   }
 
-  currentPlayerElement.innerHTML = `
+  document.querySelector('.game__options--state div').innerHTML = `
     <img src="${currentPlayer}.svg" alt="${
     currentPlayer === 'circle' ? 'Krúžok' : 'Krížik'
-  }">
-  `;
+  }">`;
   // Aby sme zamedzili možnosti zmeniť svoj ťah opakovaným kliknutím na ten istý button:
   currentButton.disabled = true;
 };
 
 gameButtons.forEach((button) => {
   button.addEventListener('click', chosenButton);
+});
+
+// Bonus
+const preventRestart = document.querySelector(
+  '.game__options--buttons--restart',
+);
+preventRestart.addEventListener('click', (event) => {
+  const userConfirmation = confirm('Opravdu chceš začít znovu ?');
+  if (userConfirmation === false) {
+    event.preventDefault();
+  }
 });

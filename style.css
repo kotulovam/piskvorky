@@ -104,7 +104,7 @@ a {
   height: 8vmin;
   border: 1px solid #283e50;
   box-sizing: border-box;
-  background: rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.3);
   cursor: pointer;
 }
 
@@ -118,7 +118,7 @@ a {
 
 .game__field--square:hover,
 .game__field--square:focus {
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.4);
 }
 
 .game__options {
@@ -135,6 +135,10 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.game__options--state img {
+  width: 90%;
 }
 
 .game__options--state p {
