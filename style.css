@@ -100,6 +100,9 @@ a {
 
 
 .game__field--square {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 8vmin;
   height: 8vmin;
   border: 1px solid #283e50;
