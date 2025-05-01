@@ -112,11 +112,11 @@ a {
 }
 
 .game__field--square-cross img {
-  width: 4.5vmin
+  width: 4vmin
 }
 
 .game__field--square-circle img {
-  width: 4.5vmin
+  width: 4vmin
 }
 
 .game__field--square:hover,
@@ -132,6 +132,9 @@ a {
 
 .game__options--state {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
 }
 
 .game__options--state div {
@@ -141,11 +144,14 @@ a {
 }
 
 .game__options--state img {
-  width: 90%;
+  width: 100%;
+  margin-bottom: 2.5%;
 }
 
 .game__options--state p {
-  margin-right: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: larger;
   font-weight: bolder;
   font-family: sans-serif;

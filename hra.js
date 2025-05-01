@@ -37,8 +37,10 @@ const chosenButton = (event) => {
 
   const winner = findWinner(rewrittenField);
   if (winner === 'o' || winner === 'x') {
-    alert(`Winner of the game is ${winner.toUpperCase()}`);
-    location.reload();
+    setTimeout(() => {
+      alert(`Winner of the game is ${winner.toUpperCase()}.`);
+      location.reload();
+    }, 100);
   }
 };
 
