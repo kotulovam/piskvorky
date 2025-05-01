@@ -1,7 +1,7 @@
-let currentPlayer = 'circle';
-let gameButtons = document.querySelectorAll('.game__field--square');
+import { findWinner } from 'https://unpkg.com/piskvorky@0.1.4';
 
-const restartButton = document.querySelector;
+let currentPlayer = 'circle';
+const gameButtons = document.querySelectorAll('.game__field--square');
 
 const chosenButton = (event) => {
   const currentButton = event.target;
@@ -20,8 +20,26 @@ const chosenButton = (event) => {
     <img src="${currentPlayer}.svg" alt="${
     currentPlayer === 'circle' ? 'Krúžok' : 'Krížik'
   }">`;
+
   // Aby sme zamedzili možnosti zmeniť svoj ťah opakovaným kliknutím na ten istý button:
   currentButton.disabled = true;
+
+  let currentField = Array.from(gameButtons);
+
+  const rewrittenField = currentField.map((fieldSquare) => {
+    if (fieldSquare.classList.contains('game__field--square-circle')) {
+      return 'o';
+    } else if (fieldSquare.classList.contains('game__field--square-cross')) {
+      return 'x';
+    }
+    return '_';
+  });
+
+  const winner = findWinner(rewrittenField);
+  if (winner === 'o' || winner === 'x') {
+    alert(`Winner of the game is ${winner.toUpperCase()}`);
+    location.reload();
+  }
 };
 
 gameButtons.forEach((button) => {
