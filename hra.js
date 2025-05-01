@@ -36,12 +36,18 @@ const chosenButton = (event) => {
   });
 
   const winner = findWinner(rewrittenField);
-  if (winner === 'o' || winner === 'x') {
-    setTimeout(() => {
-      alert(`Winner of the game is ${winner.toUpperCase()}.`);
+
+  setTimeout(() => {
+    if (winner === 'o' || winner === 'x') {
+      const nameofWinner = winner === 'o' ? 'Vyhrálo kolečko' : 'Vyhrál křížek';
+      alert(`${nameofWinner}.`);
+    } else if (winner === 'tie') {
+      alert('Hra skončila nerozhodne.');
+    }
+    if (winner) {
       location.reload();
-    }, 100);
-  }
+    }
+  }, 100);
 };
 
 gameButtons.forEach((button) => {
